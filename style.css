@@ -1,14 +1,13 @@
 @font-face {
-    font-family: norsee;
-    src: url(images/norsee.otf) format('opentype');
-    /* You can include additional font formats for better browser compatibility */
+    font-family: norse;
+    src: url(images/norse.otf) format('opentype');
   }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: norsee,Roboto, sans-serif;
+    font-family: norse,Roboto, sans-serif;
     font-weight: 500;
 }
 p{
@@ -27,6 +26,7 @@ body {
 span {
     color: #F0CD87;
     font-size: 4.5rem;
+    font-family: norse;   
     
 }
 .side {
@@ -93,7 +93,7 @@ img {
     margin-top: 10px;
     margin-bottom: 60px;
 }
-/**/
+/* form section*/
 form {
     color: #F0CD87;
     display: flex;
@@ -181,7 +181,7 @@ form input:focus {
 }
 
 input:focus-visible {
-    /* Reset or adjust styles as needed for default focus indicator */
+    
     outline: initial; /* Reset the default outline */
 }
 
