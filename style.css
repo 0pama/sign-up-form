@@ -3,16 +3,40 @@
     src: url(images/norse.otf) format('opentype');
   }
 
+  :root.dark{
+    --field--bgtwo: rgba(33, 33, 33, 0.5);;
+    --field--bg: black;
+
+    --input--hover-color: white;
+    --color-base-text: white;
+    --btn-color: rgba(43, 43, 36, 0.5); ;
+    --second-color-base-bg: rgba(0, 0, 0, 0.71);
+    --input-txt: white;
+    
+  }
+  :root.light{
+    --field--bgtwo: #F9FAFB;
+    --field--bg: #F9FAFB;
+    --input-txt: black;
+    --input--hover-color: #F0CD87;
+    --color-base-text: #F0CD87;
+    --btn-color: #F0CD87 ;
+    --second-color-base-bg: black;
+
+
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: norse,Roboto, sans-serif;
     font-weight: 500;
+    
 }
 p{
     display: block;
-    color: #F0CD87;
+    color: var(--color-base-text);
     margin-block-start: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -24,15 +48,14 @@ body {
     height:100vh;
 }
 span {
-    color: #F0CD87;
+    color: var(--color-base-text);
     font-size: 4.5rem;
     font-family: norse;   
     
 }
 .side {
     position: relative;
-    background: no-repeat url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a179d6ef-1b19-4ca3-a934-29436412c76c/dg4trrt-dfa3510e-e9c0-46c0-b8a1-dd74464c0d7b.jpg/v1/fill/w_894,h_894,q_70,strp/odin_teaching__to_little_thor_1_by_zenart07_dg4trrt-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2ExNzlkNmVmLTFiMTktNGNhMy1hOTM0LTI5NDM2NDEyYzc2Y1wvZGc0dHJydC1kZmEzNTEwZS1lOWMwLTQ2YzAtYjhhMS1kZDc0NDY0YzBkN2IuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dkvfz0p7NKxoinTyEm73E2Oiait8XZaXE9vOXYFdHUg);
-    background-size:  100% 100%;
+    background: no-repeat url(images/lighttheme.jpg)  0 0 / 100% 100%;
     width:100vh;
     display: flex;
     flex-direction: column;
@@ -47,7 +70,7 @@ span {
      justify-content: center;
      align-items: center;
      padding: 10px;
-    background-color: rgba(12, 1, 1, 0.5);
+    background-color: rgba(0, 1, 1, 0.3);
      width: 100%;
      margin-bottom: 390px;
 
@@ -57,12 +80,12 @@ span {
 .photo-credit {
     position: absolute;
     bottom: 20px ;
-    color: #F0CD87;
+    color: var(--color-base-text);
     font-size: 1.3rem;
 }
 .photo-credit a {
 
-    color: #F0CD87;
+    color: var(--color-base-text);
 
 } 
 
@@ -79,7 +102,7 @@ img {
 .form-control {
     padding-top: 100px;
     padding-bottom:140px ;
-    background-color: #F9FAFB;
+    background-color: var(--field--bg);
 }
 
 .form-control > p {
@@ -95,9 +118,9 @@ img {
 }
 /* form section*/
 form {
-    color: #F0CD87;
+    color: var(--color-base-text);
     display: flex;
-    background-color: #F9FAFB;
+    background-color: var(--field--bg);
 
     flex-direction: column;
 }
@@ -108,7 +131,7 @@ form > fieldset  {
     flex-direction: column;
     gap:20px;
     padding-bottom: 50px;
-    background-color: white;
+    background-color:var(--field--bgtwo);
     border-top:0;
     box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.5);
     border-style: none;
@@ -124,9 +147,7 @@ form > fieldset > div {
     
 
 }
-.form-group {
 
-}
 
 input {
     width: 260px;
@@ -137,7 +158,10 @@ input {
     border: 1px solid #E5E7EB;
 }
 
-
+input {
+    background-color: var(--field--bg);
+    color: var(--input-txt);
+}
 
 .submit-btn {
     width: 22%;
@@ -151,7 +175,8 @@ input {
     margin-top: 40px;
     color: white;
     margin-left: 60px;
-    background-color: #F0CD87;
+    background-color: var(--btn-color);
+    
 }
 
 #login {
@@ -165,19 +190,19 @@ input {
 #login > span {
     font-weight: 700;
     font-size: 1.2rem;
-    color: #F0CD87;;
+    color: var(--color-base-text);;
     
 
 } 
 #login > span a {
-      color: #F0CD87;
+      color: var(--color-base-text);
 }
 
 
 
 form input:focus {
     border-style: none;
-    box-shadow: 0px 0px 1px 1px #F0CD87;;
+    box-shadow: 0px 0px 1px 1px var(--input--hover-color);
 }
 
 input:focus-visible {
@@ -223,4 +248,17 @@ input:focus-visible {
     font-weight:600;
     font-style:italic;
     display:none;
+}
+
+.theme {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    color: #E5E7EB;
+    width: 80px;
+    background-color: var(--btn-color);
+
 }

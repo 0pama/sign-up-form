@@ -19,3 +19,22 @@ pass.forEach((input, index) => {
         }
     });
 });
+
+
+const root = document.documentElement;
+root.className ="light"
+
+document.querySelector('.theme').addEventListener('click', (e) => {
+    let currentTheme = root.className || 'dark'; // Assume 'dark' if no class is set
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    root.className = newTheme;
+    if(newTheme === "dark"  ) {
+        document.querySelector('.theme').textContent = "go light";
+        document.querySelector(".side").style.background = "no-repeat url(images/darktheme.jpg)  0 0 / 100% 100%"
+    } else {
+        document.querySelector('.theme').textContent = "go dark";
+        document.querySelector(".side").style.background = "no-repeat url(images/lighttheme.jpg)  0 0 / 100% 100%"
+
+    }
+    
+});
