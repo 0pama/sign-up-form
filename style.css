@@ -13,6 +13,7 @@
 }
 p{
     display: block;
+    color: #F0CD87;
     margin-block-start: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -24,7 +25,7 @@ body {
     height:100vh;
 }
 span {
-    color: white;
+    color: #F0CD87;
     font-size: 4.5rem;
     
 }
@@ -56,12 +57,12 @@ span {
 .photo-credit {
     position: absolute;
     bottom: 20px ;
-    color: aliceblue;
+    color: #F0CD87;
     font-size: 1.3rem;
 }
 .photo-credit a {
 
-    color: white;
+    color: #F0CD87;
 
 } 
 
@@ -94,6 +95,7 @@ img {
 }
 /**/
 form {
+    color: #F0CD87;
     display: flex;
     background-color: #F9FAFB;
 
@@ -149,7 +151,7 @@ input {
     margin-top: 40px;
     color: white;
     margin-left: 60px;
-    background-color: #596D48;
+    background-color: #F0CD87;
 }
 
 #login {
@@ -163,19 +165,19 @@ input {
 #login > span {
     font-weight: 700;
     font-size: 1.2rem;
-    color: #596D48;
+    color: #F0CD87;;
     
 
 } 
 #login > span a {
-    color: #596D48;
+      color: #F0CD87;
 }
 
 
 
 form input:focus {
     border-style: none;
-    box-shadow: 0px 0px 1px 1px blue;
+    box-shadow: 0px 0px 1px 1px #F0CD87;;
 }
 
 input:focus-visible {
@@ -205,11 +207,11 @@ input:focus-visible {
 
 .match {
     border-style: none;
-    box-shadow: 0px 0px 1px 1px #596D48;
+    box-shadow: 0px 0px 1px 1px green;
 }
 .match:focus {
     border-style: none;
-    box-shadow: 0px 0px 1px 1px #596D48;
+    box-shadow: 0px 0px 1px 1px green;
 }
 
 
@@ -217,7 +219,7 @@ input:focus-visible {
     margin-top:-0.1px;
     margin-top:8px;
     margin-left:-2px;
-    color:#596D48;
+    color:green;
     font-weight:600;
     font-style:italic;
     display:none;
