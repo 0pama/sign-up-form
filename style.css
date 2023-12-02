@@ -1,6 +1,6 @@
 @font-face {
     font-family: norsee;
-    src: url(/images\norse.otf) format('opentype');
+    src: url(images\norse.otf) format('opentype');
     /* You can include additional font formats for better browser compatibility */
   }
 
@@ -30,7 +30,7 @@ span {
 }
 .side {
     position: relative;
-    background-image: /* 1 */ url(/images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-image: /* 1 */ url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     width:100vh;
     display: flex;
