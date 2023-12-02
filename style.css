@@ -30,8 +30,8 @@ span {
 }
 .side {
     position: relative;
-    background-image: /* 1 */ url(images/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: cover;
+    background: no-repeat url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a179d6ef-1b19-4ca3-a934-29436412c76c/dg4trrt-dfa3510e-e9c0-46c0-b8a1-dd74464c0d7b.jpg/v1/fill/w_894,h_894,q_70,strp/odin_teaching__to_little_thor_1_by_zenart07_dg4trrt-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2ExNzlkNmVmLTFiMTktNGNhMy1hOTM0LTI5NDM2NDEyYzc2Y1wvZGc0dHJydC1kZmEzNTEwZS1lOWMwLTQ2YzAtYjhhMS1kZDc0NDY0YzBkN2IuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dkvfz0p7NKxoinTyEm73E2Oiait8XZaXE9vOXYFdHUg);
+    background-size:  100% 100%;
     width:100vh;
     display: flex;
     flex-direction: column;
