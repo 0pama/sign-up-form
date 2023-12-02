@@ -9,7 +9,6 @@
 p{
     display: block;
     margin-block-start: 1em;
-    margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -28,7 +27,7 @@ span {
     position: relative;
     background-image: /* 1 */ url(/images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    width:80%;
+    width:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,5 +70,150 @@ img {
 }
 
 /* side section ends here*/
+.form-control {
+    padding-top: 100px;
+    padding-bottom:140px ;
+    background-color: #F9FAFB;
+}
+
+.form-control > p {
+    padding-left:40px ;
+    line-height: 30px;
+    padding-right: 100px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.form-control > p:nth-child(3) {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+/**/
+form {
+    display: flex;
+    background-color: #F9FAFB;
+
+    flex-direction: column;
+}
+
+form > fieldset  {
+    display: flex;
+    background-color: rgba(00,00,00,0.2);
+    flex-direction: column;
+    gap:20px;
+    padding-bottom: 50px;
+    background-color: white;
+    border-top:0;
+    box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.5);
+    border-style: none;
+}
+h1 {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+form > fieldset > div {
+    display: flex;
+    gap: 70px;
+    margin-left: 30px;
+    
+
+}
+.form-group {
+
+}
+
+input {
+    width: 260px;
+    height: 30px;
+    padding: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
 
 
+
+.submit-btn {
+    width: 22%;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    text-align: center;
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 40px;
+    color: white;
+    margin-left: 60px;
+    background-color: #596D48;
+}
+
+#login {
+
+    margin-left: 24px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+#login > span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #596D48;
+    
+
+} 
+#login > span a {
+    color: #596D48;
+}
+
+
+
+form input:focus {
+    border-style: none;
+    box-shadow: 0px 0px 1px 1px blue;
+}
+
+input:focus-visible {
+    /* Reset or adjust styles as needed for default focus indicator */
+    outline: initial; /* Reset the default outline */
+}
+
+
+.warning-msg {
+    margin-top:-0.1px;
+    margin-top:8px;
+    margin-left:2px;
+    color:red;
+    font-weight:600;
+    font-style:italic;
+    display:none;
+}
+.warning {
+    border-style: none;
+    box-shadow: 0px 0px 1px 1px red;
+}
+.warning:focus {
+    border-style: none;
+    box-shadow: 0px 0px 1px 1px red;
+}
+
+
+.match {
+    border-style: none;
+    box-shadow: 0px 0px 1px 1px #596D48;
+}
+.match:focus {
+    border-style: none;
+    box-shadow: 0px 0px 1px 1px #596D48;
+}
+
+
+.match-msg {
+    margin-top:-0.1px;
+    margin-top:8px;
+    margin-left:-2px;
+    color:#596D48;
+    font-weight:600;
+    font-style:italic;
+    display:none;
+}
