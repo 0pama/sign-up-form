@@ -4,12 +4,12 @@
   }
 
   :root.dark{
-    --field--bgtwo: rgba(33, 33, 33, 0.5);;
+    --field--bgtwo: #111111;
     --field--bg: black;
 
     --input--hover-color: white;
     --color-base-text: white;
-    --btn-color: rgba(43, 43, 36, 0.5); ;
+    --btn-color: #111111;
     --second-color-base-bg: rgba(0, 0, 0, 0.71);
     --input-txt: white;
     

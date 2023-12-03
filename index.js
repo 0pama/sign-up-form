@@ -29,10 +29,14 @@ document.querySelector('.theme').addEventListener('click', (e) => {
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     root.className = newTheme;
     if(newTheme === "dark"  ) {
+        
+        document.querySelector('.photo-credit').innerHTML = '<p> Photo by <a target="_blank" href="https://www.deviantart.com/joaofred/gallery">joaofred</a> at <a target="_blank" href="https://www.deviantart.com">deviantart</a></p>';
         document.querySelector('.theme').textContent = "go light";
         document.querySelector(".side").style.background = "no-repeat url(images/darktheme.jpg)  0 0 / 100% 100%"
+        
     } else {
         document.querySelector('.theme').textContent = "go dark";
+        document.querySelector('.photo-credit').innerHTML = '<p> Photo by <a target="_blank" href="https://www.deviantart.com/zenart07/gallery">zenart07</a> at <a target="_blank" href="https://www.deviantart.com">deviantart</a></p>';
         document.querySelector(".side").style.background = "no-repeat url(images/lighttheme.jpg)  0 0 / 100% 100%"
 
     }
