@@ -81,3 +81,20 @@ document.querySelector('.theme').addEventListener('click', (e) => {
     }
     
 });
+
+
+document.getElementById('signup-form').addEventListener('submit', function(event) {
+    let one = pass[0].value;
+    let two = pass[1].value;
+
+    // Condition to prevent default submission
+    if (one !== two || one === "") {
+        event.preventDefault(); // Prevent default form submission
+        pass.forEach(element => element.classList.add("warning"));
+        setTimeout(() => {
+            pass.forEach(element => element.classList.remove("warning"));
+        }, 1000);        
+    } else {
+        console.log("Form submitted.");
+    }
+});
